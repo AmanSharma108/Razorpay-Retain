@@ -1,0 +1,183 @@
+@import 'tailwindcss';
+
+:root {
+  /* Design Tokens (Light Mode Default) */
+  --bg-app: #F5F7FA;
+  --surface-card: #FFFFFF;
+  --surface-card-subtle: #F8FAFC;
+  --surface-hover: #F1F5F9;
+  --border-subtle: #E6E9EF;
+  --border-strong: #CBD5E1;
+  --border-focus: #3395FF;
+  
+  --ink-primary: #0B1220;
+  --ink-muted: #64748B;
+  --ink-tertiary: #94A3B8;
+
+  --accent-brand: #3395FF; /* Razorpay Blue */
+  --accent-brand-subtle: rgba(51, 149, 255, 0.08);
+  --accent-brand-hover: #1E82F0;
+
+  --status-success: #0F9D58;
+  --status-success-subtle: rgba(15, 157, 88, 0.08);
+  --status-warning: #F5A623;
+  --status-warning-subtle: rgba(245, 166, 35, 0.08);
+  --status-error: #E5484D;
+  --status-error-subtle: rgba(229, 72, 77, 0.08);
+  --status-info: #3395FF;
+  --status-info-subtle: rgba(51, 149, 255, 0.08);
+
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+
+  /* Fonts */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+}
+
+[data-theme="dark"], .dark {
+  --bg-app: #0B0D12;
+  --surface-card: #12151D;
+  --surface-card-subtle: #181C26;
+  --surface-hover: #1E2330;
+  --border-subtle: #202430;
+  --border-strong: #2A2E3A;
+  --border-focus: #3395FF;
+
+  --ink-primary: #F2F1EC;
+  --ink-muted: #8B8D97;
+  --ink-tertiary: #545763;
+
+  --accent-brand: #3395FF;
+  --accent-brand-subtle: rgba(51, 149, 255, 0.12);
+  --accent-brand-hover: #5FA8E8;
+
+  --status-success: #4ADE80;
+  --status-success-subtle: rgba(74, 222, 128, 0.1);
+  --status-warning: #F5A623;
+  --status-warning-subtle: rgba(245, 166, 35, 0.1);
+  --status-error: #F0665C;
+  --status-error-subtle: rgba(240, 102, 92, 0.1);
+  --status-info: #5FA8E8;
+  --status-info-subtle: rgba(95, 168, 232, 0.1);
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  body {
+    background-color: var(--bg-app);
+    color: var(--ink-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+  }
+
+  /* Universal tabular figures for numeric alignment */
+  .tabular-nums,
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  /* Custom Precision Minimal Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-app);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-muted);
+  }
+}
+
+/* =========================================================================
+   PRECISION FINTECH UTILITIES & LIVE PIPELINE ANIMATIONS
+   ========================================================================= */
+
+.font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Row Status Hover Left-Border Indicators (Quiet, Noisy Background Removed) */
+.table-row-status {
+  position: relative;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+  border-left: 3px solid transparent;
+}
+
+.table-row-status:hover {
+  background-color: var(--surface-hover);
+}
+
+.table-row-status.status-success:hover {
+  border-left-color: var(--status-success) !important;
+}
+
+.table-row-status.status-warning:hover {
+  border-left-color: var(--status-warning) !important;
+}
+
+.table-row-status.status-error:hover {
+  border-left-color: var(--status-error) !important;
+}
+
+.table-row-status.status-info:hover {
+  border-left-color: var(--status-info) !important;
+}
+
+/* Live Active Node Glow & Pulse (Respects prefers-reduced-motion) */
+@keyframes pipeline-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(51, 149, 255, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(51, 149, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(51, 149, 255, 0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pipeline-node-active {
+    animation: pipeline-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+/* Card Surface Utility */
+.fintech-card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  border-radius: 8px;
+}
+
+.fintech-card:hover {
+  border-color: var(--border-strong);
+}

@@ -1,0 +1,91 @@
+# =================================================================
+# Security & Environment Variables
+# =================================================================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+*.env
+
+# Allow sample configuration templates
+!.env.example
+!.env.production.example
+!backend/.env.example
+
+# =================================================================
+# Database & Runtime State
+# =================================================================
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+revenue_recovery.db
+backend/revenue_recovery.db
+backend/data/
+data/
+backend_data/
+
+# =================================================================
+# Python & Testing
+# =================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+env/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =================================================================
+# Node & Frontend
+# =================================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.oxlintrc.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =================================================================
+# Operating System & IDE Files
+# =================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.log

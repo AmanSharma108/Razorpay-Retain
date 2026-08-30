@@ -1,0 +1,17 @@
+**/.git
+**/.github
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache
+**/.coverage
+**/htmlcov
+**/.env
+**/.env.local
+**/.DS_Store
+*.db
+*.sqlite3
+revenue_recovery.db
