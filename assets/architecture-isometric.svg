@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1500 660" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0A1128"/>
+    <stop offset="100%" stop-color="#0E2A4A"/>
+  </linearGradient>
+  <radialGradient id="floorGlow" cx="50%" cy="100%" r="70%">
+    <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1500" height="700" fill="url(#bg)"/>
+<rect width="1500" height="700" fill="url(#floorGlow)"/>
+<text x="40" y="55" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#F8FAFC">The Recovery Pipeline</text>
+<text x="40" y="80" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748B">Six stages from a failed payment to a verified, learned-from recovery</text>
+
+<path d="M 250.0 394 Q 300.0 316 350.0 362" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.55"/>
+<polygon points="350.0,362 342.4680353512607,359.30379738703834 346.68656706136494,354.7184368325772" fill="#94A3B8" opacity="0.75"/>
+<path d="M 470.0 362 Q 520.0 284 570.0 330" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.55"/>
+<polygon points="570.0,330 562.4680353512607,327.30379738703834 566.6865670613649,322.7184368325772" fill="#94A3B8" opacity="0.75"/>
+<path d="M 690.0 330 Q 740.0 252 790.0 298" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.55"/>
+<polygon points="790.0,298 782.4680353512607,295.30379738703834 786.6865670613649,290.7184368325772" fill="#94A3B8" opacity="0.75"/>
+<path d="M 910.0 298 Q 960.0 220 1010.0 266" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.55"/>
+<polygon points="1010.0,266 1002.4680353512607,263.30379738703834 1006.6865670613649,258.7184368325772" fill="#94A3B8" opacity="0.75"/>
+<path d="M 1130.0 266 Q 1180.0 188 1230.0 234" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 7" stroke-linecap="round" opacity="0.55"/>
+<polygon points="1230.0,234 1222.4680353512606,231.30379738703834 1226.686567061365,226.71843683257723" fill="#94A3B8" opacity="0.75"/>
+<path d="M 860 384 C 910 434, 925 469, 945 474" fill="none" stroke="#F87171" stroke-width="2" stroke-dasharray="1 6" opacity="0.7"/>
+<circle cx="963" cy="481" r="34" fill="#7F1D1D" opacity="0.35"/>
+<circle cx="963" cy="481" r="34" fill="none" stroke="#F87171" stroke-width="1.5" opacity="0.8"/>
+<text x="963" y="477" font-family="Arial, sans-serif" font-size="11" fill="#FCA5A5" text-anchor="middle" font-weight="700">HUMAN</text>
+<text x="963" y="491" font-family="Arial, sans-serif" font-size="11" fill="#FCA5A5" text-anchor="middle" font-weight="700">REVIEW</text>
+<ellipse cx="190" cy="572" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="120.0,440 190,480 190,562 120.0,522" fill="#0240c8"/><polygon points="260.0,440 190,480 190,562 260.0,522" fill="#1b59e1"/><polygon points="190,400 260.0,440 190,480 120.0,440" fill="#5c9aff"/>
+<circle cx="190" cy="440" r="16" fill="#0A1128" stroke="#5c9aff" stroke-width="2"/>
+<text x="190" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">1</text>
+<text x="190" y="596" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Ingest</text>
+<text x="190" y="616" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Webhook + polling,</text>
+<text x="190" y="631" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">idempotent capture</text>
+<ellipse cx="410" cy="540" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="340.0,408 410,448 410,530 340.0,490" fill="#5917ca"/><polygon points="480.0,408 410,448 410,530 480.0,490" fill="#7230e3"/><polygon points="410,368 480.0,408 410,448 340.0,408" fill="#b371ff"/>
+<circle cx="410" cy="408" r="16" fill="#0A1128" stroke="#b371ff" stroke-width="2"/>
+<text x="410" y="413" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">2</text>
+<text x="410" y="564" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Diagnose</text>
+<text x="410" y="584" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Root cause, severity</text>
+<text x="410" y="599" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">and confidence score</text>
+<ellipse cx="630" cy="508" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="560.0,376 630,416 630,498 560.0,458" fill="#0082c6"/><polygon points="700.0,376 630,416 630,498 700.0,458" fill="#049bdf"/><polygon points="630,336 700.0,376 630,416 560.0,376" fill="#45dcff"/>
+<circle cx="630" cy="376" r="16" fill="#0A1128" stroke="#45dcff" stroke-width="2"/>
+<text x="630" y="381" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">3</text>
+<text x="630" y="532" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Decide</text>
+<text x="630" y="552" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Thompson Sampling</text>
+<text x="630" y="567" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">bandit picks a play</text>
+<ellipse cx="850" cy="476" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="780.0,344 850,384 850,466 780.0,426" fill="#b90303"/><polygon points="920.0,344 850,384 850,466 920.0,426" fill="#d21c1c"/><polygon points="850,304 920.0,344 850,384 780.0,344" fill="#ff5d5d"/>
+<circle cx="850" cy="344" r="16" fill="#0A1128" stroke="#ff5d5d" stroke-width="2"/>
+<text x="850" y="349" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">4</text>
+<text x="850" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Risk Gate</text>
+<text x="850" y="520" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">High value / discount /</text>
+<text x="850" y="535" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">outage checks</text>
+<ellipse cx="1070" cy="444" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="1000.0,312 1070,352 1070,434 1000.0,394" fill="#008027"/><polygon points="1140.0,312 1070,352 1070,434 1140.0,394" fill="#0c9940"/><polygon points="1070,272 1140.0,312 1070,352 1000.0,312" fill="#4dda81"/>
+<circle cx="1070" cy="312" r="16" fill="#0A1128" stroke="#4dda81" stroke-width="2"/>
+<text x="1070" y="317" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">5</text>
+<text x="1070" y="468" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Act</text>
+<text x="1070" y="488" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Payment link, retry,</text>
+<text x="1070" y="503" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">reminder, grace notice</text>
+<ellipse cx="1290" cy="412" rx="86.8" ry="14" fill="#000000" opacity="0.35"/>
+<polygon points="1220.0,280 1290,320 1290,402 1220.0,362" fill="#d27b00"/><polygon points="1360.0,280 1290,320 1290,402 1360.0,362" fill="#eb9401"/><polygon points="1290,240 1360.0,280 1290,320 1220.0,280" fill="#ffd542"/>
+<circle cx="1290" cy="280" r="16" fill="#0A1128" stroke="#ffd542" stroke-width="2"/>
+<text x="1290" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC" text-anchor="middle">6</text>
+<text x="1290" y="436" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC" text-anchor="middle">Verify</text>
+<text x="1290" y="456" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Confirm outcome,</text>
+<text x="1290" y="471" font-family="Arial, sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">update posteriors</text>
+</svg>
